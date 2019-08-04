@@ -1,0 +1,9 @@
+<!--pages/game/game.wxml-->
+<view class='box' wx:for='{{list}}' wx:key='{{index}}' data-id='{{item.id}}' bindtap='goDetail'>
+    <image src='{{item.img}}'></image>
+    <view class='right'>
+      <text class='title'>{{item.title}}</text>
+      <text>原料：{{item.ingredients}}</text>
+      <text>用料：{{item.burden}}</text>
+    </view>
+  </view>

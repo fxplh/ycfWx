@@ -1,0 +1,12 @@
+<!--pages/menu/menu.wxml-->
+<view class="menu">
+  <view class='item' wx:for='{{list}}' wx:key='{{index}}'>
+    <view class='title'>
+      <image src='/images/tags.png'></image>
+      <text>{{item.name}}</text>
+    </view>
+    <view class='classic'>
+      <text wx:for='{{item.childClass}}' wx:key='{{index}}' data-tags='{{item.id}}'  data-content='{{item.name}}' bindtap='goList'>{{item.name}}</text> 
+    </view> 
+  </view> 
+</view>
